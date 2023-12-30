@@ -1,0 +1,79 @@
+This machine supports 20 threads.,,,
+,,,
+We will test up to 40 simultaneous copies of a STREAM memory-copy,,,
+benchmark, each using a buffer size up to 67108864 bytes.,,
+,,,
+The bandwidth is a function of two independent variables: the number,,,
+of simultaneous tasks, and the size of the data array that each task,,
+is repeatedly copying. For each combination of these, two measurements,,
+of bandwidth are printed out: total bandwidth (achieved by all tasks,,,
+combined), and bandwidth per task. Units are:,,
+,,,
+  tasks: unitless integer,,,
+  memsize: amount of memory used by each task, in bytes,,
+  bandwidth: bandwidth achieved by all tasks combined, in bytes/second,,
+  BW/task: bandwidth per task, in bytes/second,,
+,,,
+This will take some time, and the processor load will steadily increase.,,
+If the computer's fans are making noise, that's probably why.,,
+,,,
+tasks,  memsize, bandwidth,   BW/task
+1,1024,1.81E+10,1.81E+10
+1,4096,1.74E+10,1.74E+10
+1,16384,1.03E+10,1.03E+10
+1,65536,1.73E+10,1.73E+10
+1,262144,1.86E+10,1.86E+10
+1,1048576,1.86E+10,1.86E+10
+1,4194304,1.74E+10,1.74E+10
+1,16777216,1.74E+10,1.74E+10
+1,67108864,1.32E+10,1.32E+10
+,,,
+2,1024,3.61E+10,1.80E+10
+2,4096,3.48E+10,1.74E+10
+2,16384,3.45E+10,1.73E+10
+2,65536,3.40E+10,1.70E+10
+2,262144,3.72E+10,1.86E+10
+2,1048576,3.72E+10,1.86E+10
+2,4194304,3.52E+10,1.76E+10
+2,16777216,3.47E+10,1.73E+10
+2,67108864,2.63E+10,1.32E+10
+,,,
+4,1024,7.22E+10,1.80E+10
+4,4096,6.75E+10,1.69E+10
+4,16384,6.87E+10,1.72E+10
+4,65536,6.81E+10,1.70E+10
+4,262144,7.43E+10,1.86E+10
+4,1048576,7.43E+10,1.86E+10
+4,4194304,7.02E+10,1.75E+10
+4,16777216,4.85E+10,1.21E+10
+4,67108864,4.58E+10,1.15E+10
+,,,
+8,1024,1.44E+11,1.80E+10
+8,4096,1.39E+11,1.74E+10
+8,16384,1.38E+11,1.72E+10
+8,65536,1.36E+11,1.70E+10
+8,262144,1.49E+11,1.87E+10
+8,1048576,1.48E+11,1.86E+10
+8,4194304,1.40E+11,1.76E+10
+8,16777216,5.38E+10,6.72E+09
+8,67108864,5.44E+10,6.80E+09
+,,,
+16,1024,2.89E+11,1.80E+10
+16,4096,2.74E+11,1.71E+10
+16,16384,2.79E+11,1.74E+10
+16,65536,2.71E+11,1.69E+10
+16,262144,2.98E+11,1.86E+10
+16,1048576,2.97E+11,1.86E+10
+16,4194304,5.15E+10,3.22E+09
+16,16777216,5.17E+10,3.23E+09
+16,67108864,5.25E+10,3.28E+09
+,,,
+32,1024,5.77E+11,1.80E+10
+32,4096,5.55E+11,1.73E+10
+32,16384,5.54E+11,1.73E+10
+32,65536,5.45E+11,1.70E+10
+32,262144,5.95E+11,1.86E+10
+32,1048576,5.93E+11,1.85E+10
+32,4194304,7.85E+10,2.45E+09
+32,16777216,8.23E+10,2.57E+09
+32,67108864,8.37E+10,2.61E+09

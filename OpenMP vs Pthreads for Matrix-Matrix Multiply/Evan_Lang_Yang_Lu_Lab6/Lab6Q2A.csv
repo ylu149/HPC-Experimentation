@@ -1,0 +1,136 @@
+Dense MMM tests ,,,,
+,,,,
+Doing MMM three different ways,,,,
+for 25 different matrix sizes from 0 to 768,,,,
+This may take a while!,,,,
+,,,,
+ OPT 0, iter 0, size 0,,
+ OPT 0, iter 1, size 32,,
+ OPT 0, iter 2, size 64,,
+ OPT 0, iter 3, size 96,,
+ OPT 0, iter 4, size 128,,
+ OPT 0, iter 5, size 160,,
+ OPT 0, iter 6, size 192,,
+ OPT 0, iter 7, size 224,,
+ OPT 0, iter 8, size 256,,
+ OPT 0, iter 9, size 288,,
+ OPT 0, iter 10, size 320,,
+ OPT 0, iter 11, size 352,,
+ OPT 0, iter 12, size 384,,
+ OPT 0, iter 13, size 416,,
+ OPT 0, iter 14, size 448,,
+ OPT 0, iter 15, size 480,,
+ OPT 0, iter 16, size 512,,
+ OPT 0, iter 17, size 544,,
+ OPT 0, iter 18, size 576,,
+ OPT 0, iter 19, size 608,,
+ OPT 0, iter 20, size 640,,
+ OPT 0, iter 21, size 672,,
+ OPT 0, iter 22, size 704,,
+ OPT 0, iter 23, size 736,,
+ OPT 0, iter 24, size 768,,
+ OPT 1, iter 0, size 0,,
+ OPT 1, iter 1, size 32,,
+ OPT 1, iter 2, size 64,,
+ OPT 1, iter 3, size 96,,
+ OPT 1, iter 4, size 128,,
+ OPT 1, iter 5, size 160,,
+ OPT 1, iter 6, size 192,,
+ OPT 1, iter 7, size 224,,
+ OPT 1, iter 8, size 256,,
+ OPT 1, iter 9, size 288,,
+ OPT 1, iter 10, size 320,,
+ OPT 1, iter 11, size 352,,
+ OPT 1, iter 12, size 384,,
+ OPT 1, iter 13, size 416,,
+ OPT 1, iter 14, size 448,,
+ OPT 1, iter 15, size 480,,
+ OPT 1, iter 16, size 512,,
+ OPT 1, iter 17, size 544,,
+ OPT 1, iter 18, size 576,,
+ OPT 1, iter 19, size 608,,
+ OPT 1, iter 20, size 640,,
+ OPT 1, iter 21, size 672,,
+ OPT 1, iter 22, size 704,,
+ OPT 1, iter 23, size 736,,
+ OPT 1, iter 24, size 768,,
+ OPT 2, iter 0, size 0,,
+ OPT 2, iter 1, size 32,,
+ OPT 2, iter 2, size 64,,
+ OPT 2, iter 3, size 96,,
+ OPT 2, iter 4, size 128,,
+ OPT 2, iter 5, size 160,,
+ OPT 2, iter 6, size 192,,
+ OPT 2, iter 7, size 224,,
+ OPT 2, iter 8, size 256,,
+ OPT 2, iter 9, size 288,,
+ OPT 2, iter 10, size 320,,
+ OPT 2, iter 11, size 352,,
+ OPT 2, iter 12, size 384,,
+ OPT 2, iter 13, size 416,,
+ OPT 2, iter 14, size 448,,
+ OPT 2, iter 15, size 480,,
+ OPT 2, iter 16, size 512,,
+ OPT 2, iter 17, size 544,,
+ OPT 2, iter 18, size 576,,
+ OPT 2, iter 19, size 608,,
+ OPT 2, iter 20, size 640,,
+ OPT 2, iter 21, size 672,,
+ OPT 2, iter 22, size 704,,
+ OPT 2, iter 23, size 736,,
+ OPT 2, iter 24, size 768,,
+ OPT 3, iter 0, size 0,,
+ OPT 3, iter 1, size 32,,
+ OPT 3, iter 2, size 64,,
+ OPT 3, iter 3, size 96,,
+ OPT 3, iter 4, size 128,,
+ OPT 3, iter 5, size 160,,
+ OPT 3, iter 6, size 192,,
+ OPT 3, iter 7, size 224,,
+ OPT 3, iter 8, size 256,,
+ OPT 3, iter 9, size 288,,
+ OPT 3, iter 10, size 320,,
+ OPT 3, iter 11, size 352,,
+ OPT 3, iter 12, size 384,,
+ OPT 3, iter 13, size 416,,
+ OPT 3, iter 14, size 448,,
+ OPT 3, iter 15, size 480,,
+ OPT 3, iter 16, size 512,,
+ OPT 3, iter 17, size 544,,
+ OPT 3, iter 18, size 576,,
+ OPT 3, iter 19, size 608,,
+ OPT 3, iter 20, size 640,,
+ OPT 3, iter 21, size 672,,
+ OPT 3, iter 22, size 704,,
+ OPT 3, iter 23, size 736,,
+ OPT 3, iter 24, size 768,,
+Done collecting measurements.,,,,
+,,,,
+row_len, blocked_ijk_time, openMP_blocked_ijk_time_middle, openMP_blocked_ijk_time_outer, mmm_ijk_omp
+0,0.000001,0.000001,0.000248,0.00023
+32,0.000036,0.072997,0.000929,0.000339
+64,0.000257,0.234483,0.004539,0.000937
+96,0.000839,0.003374,0.005214,0.002499
+128,0.002003,0.006636,0.007768,0.004921
+160,0.003809,0.012485,0.008453,0.010455
+192,0.006546,0.01984,0.010125,0.019276
+224,0.010351,0.029961,0.012372,0.032829
+256,0.01836,0.048199,0.015548,0.06922
+288,0.021861,0.054963,0.015968,0.067908
+320,0.030002,0.07351,0.01828,0.086509
+352,0.039783,0.094406,0.019682,0.1116
+384,0.05563,0.120899,0.021377,0.202962
+416,0.065518,0.140317,0.022387,0.160066
+448,0.08209,0.165871,0.025717,0.21144
+480,0.100369,0.187921,0.026125,0.218523
+512,0.203999,0.330235,0.037491,0.399558
+544,0.145815,0.235699,0.033397,0.27451
+576,0.174569,0.269,0.033652,0.442764
+608,0.204182,0.29186,0.036281,0.33706
+640,0.251759,0.344921,0.035673,0.641024
+672,0.275583,0.355023,0.087501,0.445819
+704,0.317152,0.412198,0.106658,0.841516
+736,0.361997,0.462495,0.146847,0.590867
+768,0.491552,0.636669,0.204767,1.110177
+,,,,
+Wakeup delay computed: 0.0729728 ,,,,
