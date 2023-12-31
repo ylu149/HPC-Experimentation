@@ -1,7 +1,8 @@
 # HPC Experimentation
 
 ## Overview
-This repository is dedicated to the experimentation with various optimization methods on bare metal High-Performance Computing (HPC) systems. It includes work from the EC527 course at Boston University, created by Martin Herbordt.
+This repository is dedicated to the experimentation with various optimization methods on bare metal High-Performance Computing (HPC) systems. It includes work from the EC527: High Performance Programming with Multicore and GPUs
+course at Boston University, taught by Martin Herbordt.
 
 ## Labs Overview
 
