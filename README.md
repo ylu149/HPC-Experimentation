@@ -34,4 +34,4 @@ course at Boston University, taught by Martin Herbordt.
 - Description: Investigation of matrix-matrix multiplication performance on different hardware architectures.
 
 ## Credits
-Special thanks to Martin Herbordt for creating the EC527 course at Boston University, which inspired and informed much of the work in this repository.
+Special thanks to Martin Herbordt for creating the EC527 course at Boston University, which inspired and informed much of the work in this repository. Additionally, heartfelt gratitude to Evan Lang for his collaboration in submitting each one of these assignments with me. 
